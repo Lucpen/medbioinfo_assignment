@@ -1,0 +1,34 @@
+Assignment 1: Working on the command line
+Introduction to Unix
+
+Solve these assignments in a terminal window, and perhaps using a browser.
+
+1. Figure out what the following Unix commands do. You should feel familiar will all of these:
+cd
+ls
+mkdir
+rm
+cat
+less
+head
+tail
+wc
+grep
+sort
+uniq
+cut
+
+2. Create a directory structure for this course in your home directory using mkdir and cd. There should be a directory for the course, and within it a directory for each assignment.
+
+3. Use the man command to figure out…
+… what the command “ls -l” does.
+… how you delete a directory and its contents with rm.
+
+4. Download our GPCR data file (with data concerning G-protein coupled receptors from a number of species) into your course directory and apply the commands from question 1 to answer the following questions. Note: this is about practicing working on the command line!
+How many columns are there (if you count by eye)?
+How many lines is there in the file?
+Use grep and wc to find out how many human GPCRs there are listed. Use techniques from Chapter 5! Do you search for “human” or “Homo sapiens”?
+How long is the shortest sequence listed in the same file? Use cut and sort!
+How many species are named in gpcr.tab?
+
+5. Download and extract a directory with Fasta files, that contains 88 Fasta files. Write a shell script that applies a multi alignment software like Muscle or MAFFT (install as necessary!) on each gene family in the directory.
