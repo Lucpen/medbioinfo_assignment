@@ -1,0 +1,47 @@
+Translate DNA
+Write a program that finds the longest open reading frame (ORF), i.e., the longest sequence of codons without a stop codon, in each input DNA sequence. Note that the ORF does not need to start with an ATG, but you should look in both forward and reverse (complemented) strands. The output is the ORFs translated to proteins using the genetic code (the standard code).
+
+To present:
+
+Your code.
+How did you structure your code and why?
+Test runs showing that requirements are fulfilled.
+What is the longest protein snippet produced on the file an_exon.fa (see the file testdata.zip)?
+Requirements
+
+Input is one or more DNA sequences in Fasta format.
+Output is in Fasta format.
+The longest ORF in each sequence should be translated. It may start from any codon. Both strands need to be considered.
+Your program must gracefully handle ambigous characters. Translate to X if it is not a regular codon.
+Your program must be well structured and be written with functions performing important algorithmic steps.
+Your program should have sensible output on the test data.
+Hints
+
+The course book has an example of how to parse a Fasta file (see chapter 11).
+Additional Python string functions that may be useful are strip() and split().
+Store the genetic code (a mapping from codons to amino acids) using a Python dictionary. A stop codon is good to map to an asterix (“*”).
+Structure your program into functions. Helpful examples are:
+One function for returning the reverse complement of a string of DNA.
+One function that takes a string of DNA, a starting position (for the frame) and returns a string of amino acids.
+One function that given a string of amino acids and a starting point returns the distance to the first stop marker (“*”).
+It might be useful to compare with NCBI’s ORFfinder. Note that their default is to start an ORF with ATG.
+Example session
+
+$ python dna2aa.py
+Which file? translationtest.dna
+>single_stop_codon
+L
+>stopcodons
+SLLSLLSLLSLLSLLSLLSLLSLLSLL
+>ambiguities
+XXXXXXXXXXXXXXXXXX
+>proteinalphabet
+ARNDCQEGHILKMFPSTWYV
+>proteinalphabet2
+ARNDCQEGHILKMFPSTWYV
+>proteinalphabet3
+ARNDCQEGHILKMFPSTWYV
+>tooshort
+
+>short
+LLL
