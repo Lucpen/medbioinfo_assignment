@@ -1,0 +1,23 @@
+Assignment 2
+In this assignment, you will start writing your own Python programs. You are expected to write them without convenient modules like BioPython. Only modules found in Python’s standard library should be used.
+
+Generate random sequences
+Write a Python program that prints a random DNA sequence in Fasta format.
+
+Requirements
+
+Your program should ask for the sequence length. Pick any suitable accession (id) the sequence.
+The session should look something like, when running the program on the command line:
+
+$ python randomdna.py
+Length: 34
+
+>myrandomsequence
+TGCGCATATTGTCTAACTATGGCTGTGGCCGGA
+The output must be in valid Fasta format.
+
+To present:
+Your code and a test run.
+Hints
+To think about: What distribution do you want for the nucleotides?
+The Python module random is suitable to use in this assignment. Take a look at the online documentation the random module! Which function do you find most useful for this assignment?
