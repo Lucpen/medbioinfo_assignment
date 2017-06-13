@@ -1,0 +1,24 @@
+Reading FastQ files
+Write a script that reads a FastQ-formatted file and writes the number of sequences in it, followed by the accessions of the sequences. See examples below!
+
+To present:
+
+The code of your program and a demonstration of it running.
+Explain the general structure of a FastQ file.
+Examples
+
+For example, if the input is
+
+@blaha001
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65
+@blaha002
+TTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTTGATTTGGGG
++
++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65!''*((((***+))%%%+
+then the output should be
+
+2
+blaha001
+blaha002
